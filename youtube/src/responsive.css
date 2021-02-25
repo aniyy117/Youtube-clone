@@ -1,0 +1,75 @@
+@media only screen and (max-width: 479px) {
+    body {
+        grid-template-areas:
+          'header header'
+          'main main'
+        ;
+    }
+    header #search-container { 
+        display: none; 
+    }
+    header #appsYT-container a img.header-icons { 
+        width: 15px; 
+    } img#profile { 
+        width: 20px;
+     }
+
+    header #left-container #menu-container nav#full-nav .transparent { 
+        display: none;
+     }
+    header #left-container #menu-container nav#full-nav {
+        grid-template-areas:
+          'nav-header nav-header'
+          'nav-content nav-content' ;
+    }
+    nav {
+        display: none;
+    }
+    main { 
+        padding: 0;
+     }
+    main #videos-container { 
+        padding: 0; 
+    }
+    main #videos-container .video { 
+        margin-bottom: 5px; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header #search-container { 
+        flex-basis: 200px;
+     }
+    header #search-container form input[type="button"] {
+        display: none;
+    }
+    header #appsYT-container a img.header-icons { 
+        width: 15px; 
+    } img#profile {
+         width: 25px; 
+        }
+    main { 
+        padding: 0; 
+    }
+    main #videos-container { 
+        padding: 5;
+     }
+    main #videos-container .video {
+         margin-bottom: 10px; }
+
+}
+
+@media only screen and (max-width: 801px) {
+    header #search-container {
+         flex-basis: 300px;
+         }
+    main { 
+        padding: 0;
+     }
+    main #videos-container { 
+        padding: 10;
+     }
+    main #videos-container .video {
+         margin-bottom: 15px;
+         }
+}

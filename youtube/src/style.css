@@ -1,0 +1,351 @@
+html { font-family: Arial, Helvetica, sans-serif; }
+
+* { 
+    margin: 0;
+    padding: 0;
+ }
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+      'header header'
+      'nav main'
+    ;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 80px 1fr;
+}
+hr {
+    border: none;
+    border-bottom: 1px solid rgb(70, 70, 70);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100vw;
+
+    grid-area: header;
+    background: rgb(36, 36, 36);
+    z-index: 1;
+}
+header #left-container {
+    display: flex;
+    flex-basis: 240px;
+    justify-content: space-around;
+    align-items: center;
+}
+header #left-container #menu-container img#menuIcon {
+    cursor: pointer;
+}
+
+header #left-container #menu-container nav#full-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+    grid-template-areas:
+      'nav-header transparent-container'
+      'nav-content transparent-container'
+    ;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 280px 1fr;
+    z-index: 1;
+}
+header #left-container #menu-container nav#full-nav .header {
+    background: rgb(36, 36, 36);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: nav-header;
+
+    border-bottom: 1px solid rgb(70, 70, 70);
+}
+header #left-container #menu-container nav#full-nav .nav-content {
+    background: rgb(36, 36, 36);
+
+    overflow: auto;
+    grid-area: nav-content;
+}
+header #left-container #menu-container nav#full-nav .nav-content ul > hr {
+    border: none;
+    border-bottom: 1px solid rgb(70, 70, 70);
+}
+header #left-container #menu-container nav#full-nav .nav-content ul > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: rgb(163, 163, 163);
+    padding: 20px 15px 0 55px;
+}
+header #left-container #menu-container nav#full-nav .nav-content ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    padding: 10px 15px 10px 55px;
+    grid-area: nav-content;
+}
+header #left-container #menu-container nav#full-nav .nav-content ul li a:hover {
+    background: rgb(70, 70, 70);
+}
+header #left-container #menu-container nav#full-nav .nav-content ul > h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: rgb(151, 151, 151);
+    padding: 15px 50px;
+}
+header #left-container #menu-container nav#full-nav .nav-content ul li a img { 
+    margin-right: 20px;
+ }
+header #left-container #menu-container nav#full-nav .nav-content ul li a img.canal { 
+    border-radius: 50%; 
+}
+header #left-container #menu-container nav#full-nav .transparent {
+    background: black;
+    opacity: 0.5;
+    grid-area: transparent-container;
+}
+header #left-container #logo-container {
+    display: flex;
+    align-items: center;
+}
+header #left-container #logo-container h1 {
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+}
+header #left-container #logo-container h1 sup {
+     font-weight: normal;
+     }
+header #search-container {
+    display: flex;
+    flex-basis: 630px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+header #search-container form {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+header #search-container form input[type="search"] {
+    width: 85%;
+    height: 25px;
+    padding: 0 10px;
+    background: #151515;
+    color:#cdcdcd;
+    border: 1px solid #444;
+    border-radius: 2px;
+}
+header #search-container form input[type="search"]:focus {
+     border: 2px solid rgb(20, 86, 148);
+     }
+header #search-container form input[type="button"] {
+    background: #353535;
+    background-image: url("./../images/search.svg");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    width: 60px;
+    height: 25px;
+    border: 1px solid #2e2e2e;
+    border-radius: 2px;
+
+    cursor: pointer;
+}
+header #appsYT-container {
+    display: flex;
+    flex-basis: 200px;
+    padding: 0 25px;
+    justify-content: space-around;
+    align-items: center;
+}
+header #appsYT-container a.align-right {
+    display: flex; 
+    justify-content: right; 
+    position: relative;
+}
+header #appsYT-container a .dropdown-menu {
+    background: rgb(36, 36, 36);
+    opacity: 0.9;
+    display: none;
+    position: absolute;
+} .dropdown-align-right { 
+    top: 25px;
+    width: 300px;
+    text-decoration: none;
+    color: white;
+} .dropdown-top-zero { 
+    top: -10px; right: 30px;
+ }
+header #appsYT-container a .dropdown-menu.dropdown-align-right > p {
+    font-size: 14px;
+    padding: 10px 20px;
+}
+header #appsYT-container a .dropdown-menu.dropdown-align-right > p::before {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url("../images/logo.svg");
+    background-position: center;
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 10px;
+    content: "";
+}
+header #appsYT-container a .dropdown-menu.dropdown-align-right > p:hover {
+    background: #444;
+}
+header #appsYT-container a .dropdown-menu#record-drop-menu {
+    border: 2px solid #444;
+    border-top: none;
+    padding: 10px 0;
+}
+header #appsYT-container a .dropdown-menu#record-drop-menu #send-video,
+header #appsYT-container a .dropdown-menu#record-drop-menu #make-live
+{
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+header #appsYT-container a .dropdown-menu#record-drop-menu #send-video:hover,
+header #appsYT-container a .dropdown-menu#record-drop-menu #make-live:hover
+{
+    background: #444;
+}
+header #appsYT-container a .dropdown-menu#record-drop-menu #send-video::before {
+    display: inline-block;
+    background: url("../images/video.svg");
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    content: "";
+}
+header #appsYT-container a .dropdown-menu#record-drop-menu #make-live::before {
+    display: inline-block;
+    background: url("../images/live.svg");
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    content: "";
+}
+header #appsYT-container a .dropdown-menu#notifications-drop-menu { 
+    width: 500px; 
+    height: 100vh; 
+}
+header #appsYT-container a .dropdown-menu#notifications-drop-menu .header-notifications {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    text-decoration: none;
+    color: white;
+}
+header #appsYT-container a .dropdown-menu#notifications-drop-menu .notifications-area {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+}
+
+header #appsYT-container img#profile { border-radius: 50%; }
+nav#min-nav {
+    position: fixed;
+    top: 50px;
+    height: 100vh;
+    width: 80px;
+
+    grid-area: nav;
+    background: rgb(36, 36, 36);
+}
+nav#min-nav  ul#nav li a {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-around;
+
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+}
+nav#min-nav  ul#nav li a:hover {
+    background: rgb(70, 70, 70)
+}
+main {
+    padding: 10px;
+
+    grid-area: main;
+    background: rgb(20, 20, 20);
+}
+main #videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 2000px;
+}
+main #videos-container .video {
+    margin: 10px 10px 20px 10px;
+    height: auto;
+
+    flex-basis: 250px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+main #videos-container .video .info-video-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-areas:
+      'profile title'
+      '. channel'
+      '. views';
+    grid-template-columns: 50px 1fr;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+main #videos-container .video .info-video-container > img {
+    border-radius: 50%;
+    grid-area: profile;
+}
+main #videos-container .video .info-video-container > h2 {
+    font-size: 1em;
+    grid-area: title;
+}
+main #videos-container .video .info-video-container > h3 {
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #aaa;
+    grid-area: channel;
+}
+main #videos-container .video .info-video-container > span {
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #aaa;
+    grid-area: views;
+}

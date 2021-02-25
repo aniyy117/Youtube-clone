@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>YouTube</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="A place where you find everything you need" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="src/style.css" />
+        <link rel="stylesheet" href="src/responsive.css">
+
+        <script src="src/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="left-container">
+                <div id="menu-container">
+                    <img
+                      id="menuIcon" 
+                      src="images/menu.svg" 
+                      alt="menuIcon" 
+                      width="20px"
+                      onclick="dropMenu('full-nav', 'grid')"
+                    >
+                    <nav id="full-nav">
+                        <div class="header">
+                            <img
+                              id="menuIcon" 
+                              src="images/menu.svg" 
+                              alt="menuIcon" 
+                              width="20px"
+                              onclick="dropMenu('full-nav', 'grid')"
+                            >
+                            <div id="logo-container">
+                                <img src="images/logo.svg" alt="logo" width="25px">
+                                <h1>YouTube<sup>IN</sup></h1>
+                            </div>
+                        </div>
+                        <div class="nav-content">
+                            <br>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/home.svg" alt="Home" width="20px">
+                                        <p>Home</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/trending.svg" alt="trending" width="20px">
+                                        <p>trending</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/subscriptions.svg" alt="subscriptions" width="20px">
+                                        <p>subscriptions</p>
+                                    </a>
+                                </li>
+                                <br><hr><br>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/library.svg" alt="library" width="20px">
+                                        <p>library</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/history.svg" alt="history"width="20px">
+                                        <p>History</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/movie.svg" alt="movies" width="20px">
+                                        <p>Movies</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/watch-later.svg" alt="watch-later" width="20px">
+                                        <p>Watch later</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/like.svg" alt="liked-video" width="20px">
+                                        <p>Liked video</p>
+                                    </a>
+                                </li>
+                                <br><hr><br>
+                                <h3>subscriptions</h3>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                          class="canal" 
+                                          src="images/thumbnails/1.jpg" 
+                                          alt="canal" 
+                                          width="30px" 
+                                          height="30px"
+                                        >
+                                        <p>ABCD</p>
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                          class="canal" 
+                                          src="images/thumbnails/2.jpg" 
+                                          alt="canal" 
+                                          width="30px" 
+                                          height="30px"
+                                        >
+                                        <p>ABCD</p>
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                          class="canal" 
+                                          src="images/thumbnails/3.jpg" 
+                                          alt="canal" 
+                                          width="30px" 
+                                          height="30px"
+                                        >
+                                        <p>ABCD</p>
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                          class="canal" 
+                                          src="images/thumbnails/4.jpg" 
+                                          alt="canal" 
+                                          width="30px" 
+                                          height="30px"
+                                        >
+                                        <p>ABCD</p>
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                          class="canal" 
+                                          src="images/thumbnails/5.jpg" 
+                                          alt="canal" 
+                                          width="30px" 
+                                          height="30px"
+                                        >
+                                        <p>ABCD</p>
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                          class="canal" 
+                                          src="images/thumbnails/6.jpg" 
+                                          alt="canal" 
+                                          width="30px" 
+                                          height="30px"
+                                        >
+                                        <p>ABCD</p>
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                          class="canal" 
+                                          src="images/thumbnails/7.jpg" 
+                                          alt="canal" 
+                                          width="30px" 
+                                          height="30px"
+                                        >
+                                        <p>ABCD</p>
+                                    </a>
+                                </li>
+                                <br><hr><br>
+                                <h3>MORE FOR YOUTUBE</h3>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/logo.svg" alt="youtube-premium" width="20px">
+                                        <p>YouTube Premium</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/movie.svg" alt="movies" width="20px">
+                                        <p>Movies</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/games.svg" alt="gaming" width="20px">
+                                        <p>Gaming</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/live.svg" alt="live" width="20px">
+                                        <p>live</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/learn.svg" alt="learing" width="20px">
+                                        <p>learing</p>
+                                    </a>
+                                </li>
+                                <br><hr><br>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/settings.svg" alt="settings" width="20px">
+                                        <p>settings</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/report.svg" alt="report-history" width="20px">
+                                        <p>Report history</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/help.svg" alt="help" width="20px">
+                                        <p>Help</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/feedback.svg" alt="send-feedback" width="20px">
+                                        <p>Send feedback</p>
+                                    </a>
+                                </li>
+                                <br><hr><br>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Aliquid, eum repudiandae! 
+                                    Vero esse omnis maxime harum, eum odit sunt 
+                                    aspernatur architecto optio sit debitis, 
+                                    accusamus expedita dolorem animi dolore nulla?
+                                </p>
+                                <br>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Aliquid, eum repudiandae! 
+                                    Vero esse omnis maxime harum, eum odit sunt 
+                                    aspernatur architecto optio sit debitis, 
+                                    accusamus expedita dolorem animi dolore nulla?
+                                </p>
+                                <br>
+                                <p>
+                                    &copy; 2021 Clone of YouTube
+                                </p>
+                            </ul>
+                        </div>
+                        <div class="transparent">
+                            transparent
+                        </div>
+                    </nav>
+                </div>
+                <div id="logo-container">
+                    <img src="images/logo.svg" alt="logo" width="25px">
+                    <h1>YouTube<sup>IN</sup></h1>
+                </div>
+            </div>
+            <div id="search-container">
+                <form action="#" method="get">
+                    <input type="search" name="search" placeholder="Search">
+                    <input type="button" name="submit" value="" title="button">
+                </form>
+            </div>
+            <div id="appsYT-container">
+                <a href="#" onclick="dropMenu('record-drop-menu')">
+                    <img 
+                      class="header-icons"
+                      src="images/recording.svg" 
+                      alt="record" 
+                      width="18px"
+                      title="Criar"
+                    >
+                    <div class="dropdown-menu" id="record-drop-menu">
+                        <p id="upload-video">Upload video</p>
+                        <p id="go-live">Go live</p>
+                    </div>
+                </a>
+                <a class="align-right" href="#" onclick="dropMenu('appsYT-drop-menu')">
+                    <img 
+                      class="header-icons"
+                      src="images/menu-apps.svg" 
+                      alt="yt apps" 
+                      width="18px"
+                      title="Aplicativos do Youtube"
+                    >
+                    <div class="dropdown-menu dropdown-align-right" id="appsYT-drop-menu">
+                        <p>YouTube TV</p>
+                        <hr>
+                        <p>YouTube Music</p>
+                        <p>Youtube Kids</p>
+                        <hr>
+                        <p>Creator academy</p>
+                        <p>YouTube for artrist</p>
+                    </div>
+                </a>
+                <a class="align-right" href="#" onclick="dropMenu('notifications-drop-menu')">
+                    <img 
+                      class="header-icons"
+                      src="images/notifications.svg" 
+                      alt="notifications" 
+                      width="18px"
+                      title="notifications"
+                    >
+                    <div class="dropdown-menu dropdown-top-zero" id="notifications-drop-menu">
+                        <div class="header-notifications">
+                            <p>notifications</p>
+                            <img src="images/settings.svg" alt="settings" width="20px" />
+                        </div>
+                        <hr>
+                        <div class="notifications-area">
+                            <p>notifications</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="align-right" href="#" onclick="dropMenu('profile-drop-menu')">
+                    <img 
+                      id="profile" 
+                      src="images/anik.jpg" 
+                      alt="profile" 
+                      width="30px"
+                    >
+                    <div class="dropdown-menu dropdown-top-zero" id="profile-drop-menu">
+                        Dropdown-menu
+                    </div>
+                </a>
+            </div>
+        </header>
+        <nav id="min-nav">
+            <ul id="nav">
+                <li>
+                    <a href="">
+                        <img src="images/home.svg" alt="home" width="20px">
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/trending.svg" alt="trending" width="20px">
+                        <p>Trending</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/subscriptions.svg" alt="subscriptions" width="20px">
+                        <p>subscriptions</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/library.svg" alt="library" width="20px">
+                        <p>Library</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div id="videos-container">
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img
+                          src="images/thumbnails/2.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/2.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/2.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/3.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/3.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/4.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/4.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/5.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/5.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/6.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/6.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD|ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/7.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/8.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/2.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img
+                          src="images/thumbnails/5.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/6.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/7.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/3.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/3.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/4.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/5.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/8.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/2.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/5.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/3.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/4.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/5.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img
+                          src="images/thumbnails/6.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/2.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/5.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/7.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/6.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/6.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/7.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/3.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/8.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/5.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/3.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/2.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/5.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/7.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/6.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/6.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/7.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/3.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/8.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/5.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/3.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/2.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/5.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/7.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/6.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/6.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/7.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/3.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/8.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/5.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/3.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/2.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/5.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/7.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/6.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/6.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/7.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/3.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/8.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/5.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/3.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/2.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/5.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/7.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/6.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/6.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/7.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/3.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/8.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/5.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/3.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/2.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/5.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/7.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/6.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/6.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/7.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/3.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/8.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/5.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/3.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/2.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/5.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/7.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/6.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/6.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/7.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/3.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/8.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/5.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/3.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/2.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/5.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/7.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/6.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/6.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/7.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/3.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/8.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/5.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/3.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/2.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/5.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/7.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/6.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/6.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/7.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/3.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/8.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/5.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/3.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/2.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/5.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/7.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/6.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/6.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/7.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/3.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/8.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/5.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/3.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/2.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/5.jpg" 
+                          alt="profile" 
+                          width="30px" 
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/1.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/7.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/6.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/6.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/7.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/3.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/8.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img 
+                          src="images/thumbnails/1.jpg" 
+                          alt="profile" 
+                          width="30px"
+                          height="30px"
+                        >
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/5.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="images/thumbnails/3.jpg" alt="thumbnail" width="100%">
+                    <div class="info-video-container">
+                        <img src="images/anik.jpg" alt="profile" width="30px">
+                        <h2>ABCD|ABCD</h2>
+                        <h3>ABCD</h3>
+                        <span>20 views • 4 months ago</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
